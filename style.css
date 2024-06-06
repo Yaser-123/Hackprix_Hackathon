@@ -1,0 +1,307 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #141414;
+    color: #FFFFFF;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #E50914;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.roadmap {
+    background-color: #1E1E1E;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.roadmap h2 {
+    color: #E50914;
+    margin-top: 0;
+}
+
+.roadmap img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+}
+
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.course {
+    flex: 1 1 calc(33.333% - 20px);
+    background-color: #1E1E1E;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.7);
+}
+
+.course h3 {
+    margin-top: 0;
+    color: #E50914;
+}
+
+.course img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.course img:hover,
+.course img:active {
+    transform: scale(1.1);
+}
+
+.course button {
+    margin: 5px 0;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #E50914;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.course button:hover,
+.course button:active {
+    background-color: #b00710;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .course {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .course {
+        flex: 1 1 100%;
+    }
+}
+
+.search-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.search-container input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 50%;
+    max-width: 500px;
+    background-color: #333;
+    color: white;
+    transition: border 0.3s ease;
+}
+
+.search-container input[type="text"]:focus {
+    border-color: #E50914;
+    outline: none;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #E50914;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.search-container button:hover,
+.search-container button:active {
+    background-color: #b00710;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #E50914;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.course.highlight {
+    border: 2px solid #E50914;
+}
+
+#scrollTopBtn {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    z-index: 99;
+    background-color: #E50914;
+    color: white;
+    border: none;
+    border-radius: 20%; /* Make the button circular */
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+    display: none; /* Hide the button by default */
+}
+
+#scrollTopBtn:hover {
+    background-color: #b00710;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #141414;
+    color: #FFFFFF;
+}
+
+/* Light mode (LinkedIn style) */
+body.light-mode {
+    background-color: #f3f2ef;
+    color: #000000;
+}
+
+/* Container for light/dark mode toggle */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.search-container input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 50%;
+    max-width: 500px;
+    background-color: #333;
+    color: white;
+    transition: border 0.3s ease;
+}
+
+.search-container input[type="text"]:focus {
+    border-color: #E50914;
+    outline: none;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #E50914;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s;
+}
+
+.search-container button:hover {
+    background-color: #b00710;
+}
+
+/* Specific styles for the mode toggle button */
+#modeToggleBtn {
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    #modeToggleBtn {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-container {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .search-container button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
+
+/* Dark mode styles */
+header, footer, .roadmap, .course {
+    background-color: #1E1E1E;
+}
+
+/* Light mode styles */
+body.light-mode header, body.light-mode footer, body.light-mode .roadmap, body.light-mode .course {
+    background-color: #FFFFFF;
+}
+
+/* Additional styling for light mode */
+body.light-mode h1, body.light-mode h2, body.light-mode h3, body.light-mode p {
+    color: #000000;
+}
+
+body.dark-mode h1, body.dark-mode h2, body.dark-mode h3, body.dark-mode p {
+    color: #E50914;
+}
+
+body.light-mode #modeToggleBtn {
+    background-color: #0073b1;
+}
+
+body.light-mode #modeToggleBtn:hover {
+    background-color: #005582;
+}
+@media (min-width: 769px) {
+    /* Sticky search container for larger screens */
+    .search-container {
+        position: sticky;
+        top: 0; /* Adjust background color as needed */
+        padding: 15px 0; /* Adjust padding as needed */
+        z-index: 1000; /* Ensure search container stays on top */
+    }
+
+    .container {
+        padding-top: 20px; /* Adjust padding to account for sticky search container */
+    }
+}
