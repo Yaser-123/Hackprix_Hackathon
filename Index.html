@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Career Roadmaps and Courses</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2815a7015d.js" crossorigin="anonymous"></script>
     
 </head>
 <body>
@@ -19,8 +20,12 @@
 <div class="container">
     <div class="search-container">
         <input type="text" id="searchInput" placeholder="Search for courses...">
+       
         <button onclick="searchCourses()">Search</button>
-        <button id="modeToggleBtn">Light Mode</button>
+        <button id="modeToggleBtn">Mode</button>
+        <button><a href="#contact">Contact</a></button>
+        <button><a id="modeToggleBtn2" href="#ourteam">team</a></button>
+    
     </div>
 
     <div class="roadmap">
@@ -45,7 +50,7 @@
         <!-- Sample Courses for Testing -->
         <div class="course" id="course1">
             <h3>Introduction to Python</h3>
-            <img src="https://via.placeholder.com/300x200" alt="Course Image">
+            <img src="Hackathon images/IMG_20240608_134146.jpg" alt="Course Image">
             <p>
                 Platform: Coursera<br>
                 Duration: 8 weeks<br>
@@ -55,7 +60,7 @@
             </div>
             <div class="course" id="course2">
                 <h3>HTML & CSS for Beginners</h3>
-                <img src="https://via.placeholder.com/300x200" alt="Course Image">
+                <img src="Hackathon images/back.png" alt="Course Image">
                 <p>Platform: Udemy<br>
                 Duration: 6 weeks<br>
                 Free: Yes<br>
@@ -64,24 +69,96 @@
             </div>
             <div class="course" id="course3">
                 <h3>JavaScript Essentials</h3>
-                <img src="https://via.placeholder.com/300x200" alt="Course Image">
+                <img src="Hackathon images/mysterious hack f0e9339d-2d42-4d5f-92b4-093176d36dd9.png" alt="Course Image">
                 <p>Platform: edX<br>
                 Duration: 5 weeks<br>
                 Free: Yes<br>
                 <button onclick="redirectToExternalLink('JavaScript Essentials')">Learn More</button>
                 <button onclick="downloadPDF('JavaScript Essentials')">Download PDF</button>
             </div>
-            <div class="course" id="course2">
-                <h3>HTML & CSS for Beginners</h3>
-                <img src="https://via.placeholder.com/300x200" alt="Course Image">
-                <p>Platform: Udemy<br>
-                Duration: 6 weeks<br>
-                Free: Yes<br>
-                <button onclick="redirectToExternalLink('HTML & CSS for Beginners')">Learn More</button>
-                <button onclick="downloadPDF('HTML & CSS for Beginners')">Download PDF</button>
-            </div>
+            
+           
         </div>
     </div>
+
+    <!-- team -->
+
+    <div id="ourteam">
+
+<section class="team" id="team">
+
+    <h1 class="heading">Our team</h1>
+ 
+    <div class="box-container" data-aos="fade-up">
+ 
+       <div class="box">
+          <img src="Hackathon images/back.png" alt="">
+          <h3>john deo</h3>
+          <p>wedding planner</p>
+          <div class="share">
+             <a href="#" class="fab fa-facebook-f"></a>
+             <a href="#" class="fab fa-twitter"></a>
+             <a href="#" class="fab fa-linkedin"></a>
+             <a href="#" class="fab fa-instagram"></a>
+          </div>
+       </div>
+ 
+       <div class="box">
+          <img src="images/pic-2.png" alt="">
+          <h3>john deo</h3>
+          <p>wedding planner</p>
+          <div class="share">
+             <a href="#" class="fab fa-facebook-f"></a>
+             <a href="#" class="fab fa-twitter"></a>
+             <a href="#" class="fab fa-linkedin"></a>
+             <a href="#" class="fab fa-instagram"></a>
+          </div>
+       </div>
+ 
+       <div class="box">
+          <img src="images/pic-3.png" alt="">
+          <h3>john deo</h3>
+          <p>wedding planner</p>
+          <div class="share">
+             <a href="#" class="fab fa-facebook-f"></a>
+             <a href="#" class="fab fa-twitter"></a>
+             <a href="#" class="fab fa-linkedin"></a>
+             <a href="#" class="fab fa-instagram"></a>
+          </div>
+       </div>
+ 
+     
+    </div>
+</div>
+ 
+ </section>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact us</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i> 1ammar.yaser@gmail.com</p>
+                    <p><i class="fa-solid fa-code"></i> <a href="https://yaser-123.github.io/Yaser.github.io/" target="_blank"> Visit My Portfolio </a></p>
+                    <div class="social-icon">
+                        <a href="https://www.facebook.com/profile.php?id=61558544917584" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/4Grimmjaw04" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/tmohamedyaser/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/mohamedyaser08/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                   
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
     
     <footer>
         <p>&copy; 2024 Career Roadmaps. All Rights Reserved.</p>
